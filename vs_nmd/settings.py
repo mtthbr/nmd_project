@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'festivaliers',
 ]
 
 MIDDLEWARE = [
@@ -69,7 +70,6 @@ DATABASES = {
         'USER': 'postgres',
         'PASSWORD': 'retrodu56',
         'HOST': 'localhost',
-        'PORT': '8000',
     }
 }
 
