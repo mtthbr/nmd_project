@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'festivaliers',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

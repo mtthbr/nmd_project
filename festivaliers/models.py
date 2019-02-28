@@ -7,6 +7,6 @@ class Festivalier(models.Model):
   email = models.EmailField()
   feedback = models.TextField(blank=True)
   sign_in_date = models.DateTimeField(default=datetime.now, blank=True)
-  feedback_date = models.DateTimeField(default=datetime.now, blank=True)
+  feedback_date = models.DateTimeField(blank=True)
   def __str__(self):
     return self.first_name
