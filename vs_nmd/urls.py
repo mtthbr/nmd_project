@@ -1,9 +1,11 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
-from festivaliers.views import fetch_festivaliers
+
 
 urlpatterns = [
+  path('info_api/', include('info_api.urls')),
+  path('festivaliers/', include('festivaliers.urls')),
   path('admin/', admin.site.urls),
-  path('fetch_festivaliers/', fetch_festivaliers)
 ]
+
