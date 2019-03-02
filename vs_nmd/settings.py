@@ -26,7 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'festivaliers',
+    'uservs',
     'info_api',
     'rest_framework',
 ]
@@ -68,7 +68,7 @@ WSGI_APPLICATION = 'vs_nmd.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'nmdvsdb',                      
+        'NAME': 'vs_db',                      
         'USER': 'postgres',
         'PASSWORD': 'retrodu56',
         'HOST': 'localhost',
@@ -114,3 +114,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+#Rest API
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    )
+}

@@ -3,6 +3,6 @@ from . import views
 
 
 urlpatterns = [
-  path('api/', views.FestivalierListCreate.as_view() ),
+  path('api/', views.UservsListCreate.as_view() ),
 ]
 

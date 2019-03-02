@@ -1,20 +1,23 @@
-from .models import Artiste, Course, Notification, Description
-from .serializers import ArtisteSerializer, CourseSerializer, NotificationSerializer, DescriptionSerializer
+from .models import Artiste, Solex, Notification, Description
+from .serializers import ArtisteSerializer, SolexSerializer, NotificationSerializer, DescriptionSerializer
 from rest_framework import generics
 
-
+#GET uniquement
 class ArtisteListCreate(generics.ListAPIView):
   queryset = Artiste.objects.all()
   serializer_class = ArtisteSerializer
 
-class CourseListCreate(generics.ListAPIView):
-  queryset = Course.objects.all()
-  serializer_class = CourseSerializer
+#GET uniquement
+class SolexListCreate(generics.ListAPIView):
+  queryset = Solex.objects.all()
+  serializer_class = SolexSerializer
 
+#GET uniquement
 class NotificationListCreate(generics.ListAPIView):
   queryset = Notification.objects.all()
   serializer_class = NotificationSerializer
 
+#GET uniquement
 class DescriptionListCreate(generics.ListAPIView):
   queryset = Description.objects.all()
   serializer_class = DescriptionSerializer

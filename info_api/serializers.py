@@ -1,14 +1,14 @@
 from rest_framework.serializers import ModelSerializer
-from .models import Artiste, Course, Notification, Description
+from .models import Artiste, Solex, Notification, Description
 
 class ArtisteSerializer(ModelSerializer):
   class Meta:
     model = Artiste
     fields = '__all__'
 
-class CourseSerializer(ModelSerializer):
+class SolexSerializer(ModelSerializer):
   class Meta:
-    model = Course
+    model = Solex
     fields = '__all__'
 
 class NotificationSerializer(ModelSerializer):

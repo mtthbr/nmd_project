@@ -16,7 +16,7 @@ class Artiste(models.Model):
   def __str__(self):
     return self.nom
 
-class Course(models.Model):
+class Solex(models.Model):
   jour = models.CharField(max_length=15)
   type = models.CharField(max_length=25)
   heure_debut = models.DateTimeField(null=True)
