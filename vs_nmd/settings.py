@@ -122,14 +122,6 @@ REST_FRAMEWORK = {
 }
 
 
-#Email Config
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'contact.rns.node@gmail.com'
-EMAIL_HOST_PASSWORD = 'SURla66route!'
-EMAIL_USE_TLS=True
-
-
 try:
     from local_settings import *
 except ImportError:
